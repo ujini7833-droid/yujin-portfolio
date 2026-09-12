@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import './App.css'
 
 import Header from './components/Header'
 import QuickMenu from './components/QuickMenu'
+
 import Intro from './components/Intro'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -11,10 +13,18 @@ import Projects from './components/Projects'
 import Connect from './components/Connect'
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <>
-      <Header />
-      <QuickMenu />
+      <Header
+        onMenuClick={() => setIsMenuOpen(true)}
+      />
+
+      <QuickMenu
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+      />
 
       <Intro />
       <About />
