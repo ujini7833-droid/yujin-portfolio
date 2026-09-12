@@ -1,5 +1,5 @@
 const Connect = () => {
-    return <div>Connect</div>
+    return <section id="connect">Connect</section>
 }
 
 export default Connect;

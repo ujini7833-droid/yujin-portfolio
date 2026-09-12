@@ -1,5 +1,5 @@
 const Intro = () => {
-    return <div>Intro</div>
+    return <section id="intro">Intro</section>
 }
 
 export default Intro;
