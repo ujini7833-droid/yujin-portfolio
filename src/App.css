@@ -18,3 +18,50 @@ body {
   background-color: #202020;
   color: #f3f0f9;
 }
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+:root {
+  font-family: 'Pretendard', sans-serif;
+
+  background-color: #202020;
+  color: #F3F0F9;
+
+  --point-color: #00B3B3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #202020;
+  color: #F3F0F9;
+}
