@@ -1,28 +1,28 @@
 import './App.css'
-import About from './components/About'
-import Connect from './components/Connect'
-import Intro from './components/Intro'
-import ProjectCard from './components/ProjectCard'
-import Projects from './components/Projects'
+
+import Header from './components/Header'
 import QuickMenu from './components/QuickMenu'
-import Skills from './components/Skills'
+import Intro from './components/Intro'
+import About from './components/About'
 import Experience from './components/Experience'
 import Education from './components/Education'
-import Header from './components/Header'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Connect from './components/Connect'
 
 function App() {
   return (
     <>
-    <About />
-    <Connect />
-    <Intro />
-    <ProjectCard />
-    <Projects />
-    <QuickMenu />
-    <Skills />
-    <Experience />
-    <Education />
-    <Header />  
+      <Header />
+      <QuickMenu />
+
+      <Intro />
+      <About />
+      <Experience />
+      <Education />
+      <Skills />
+      <Projects />
+      <Connect />
     </>
   )
 }
