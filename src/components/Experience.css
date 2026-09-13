@@ -1,0 +1,152 @@
+.experience {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 4.25% 100px;
+  background: #202020;
+  color: #eeebf1;
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.experience-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+
+.experience-number {
+  margin: 0;
+  color: #00b3b3;
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.experience-header h2 {
+  margin: 0;
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: clamp(20px, 4vw, 24px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.experience-header h2 span,
+.experience-group h4 {
+  color: #eeebf1;
+}
+
+.experience-role {
+  color: #00b3b3;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(64px, 8vw, 120px);
+  padding: clamp(32px, 5vw, 64px) 0;
+  border-top: 1px solid rgba(0, 179, 179, 0.45);
+  border-bottom: 1px solid rgba(243, 240, 249, 0.18);
+}
+
+.experience-role,
+.experience-period,
+.experience-group h4 {
+  margin: 0;
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+
+.experience-summary h3 {
+  margin: 14px 0 24px;
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.experience-summary h3 span {
+  color: #00b3b3;
+  margin-left: 8px;
+}
+
+.experience-period {
+  color: rgba(243, 240, 249, 0.55);
+  margin-top: 6px;
+}
+
+.experience-details {
+  display: grid;
+  gap: 50px;
+}
+
+.experience-group h4 {
+  margin-bottom: 14px;
+}
+
+.experience-group ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-group li {
+  position: relative;
+  padding-left: 18px;
+  color: rgba(243, 240, 249, 0.72);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.experience-group li::before {
+  content: '';
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00b3b3;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-skills span {
+  padding: 8px 13px;
+  border: 1px solid rgba(0, 179, 179, 0.35);
+  border-radius: 100px;
+  color: #00b3b3;
+  font-family: 'Pretendard-Medium', sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    min-height: auto;
+    padding: 100px 7% 80px;
+  }
+
+  .experience-header {
+    margin-bottom: 70px;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+
+  .experience-group li {
+    font-size: 15px;
+  }
+}
