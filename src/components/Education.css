@@ -77,7 +77,7 @@
   font-size: clamp(27px, 3.5vw, 46px);
   font-weight: 400;
   line-height: 1.25;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.02em;
 }
 
 .education-content h3 span {
@@ -92,10 +92,14 @@
 
 .education-award-label {
   margin: 0 0 12px;
-  color: #00b3b3;
+  color: #eeebf1;
   font-family: 'Pretendard-Medium', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.08em;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.education-award-label span {
+  color: #00b3b3;
 }
 
 .education-award h4 {

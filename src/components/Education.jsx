@@ -24,8 +24,7 @@ function Education() {
                             </div>
 
                             <section className="education-award">
-                                <p className="education-award-label">교내 소프트웨어 경진대회</p>
-                                <h4>1위</h4>
+                                <p className="education-award-label">교내 소프트웨어 경진대회 <span>1위</span></p>
                                 <p className="education-period">2026.04 — 2026.05</p>
                                 <p className="education-description">
                                     React Native를 활용한 ‘토닥토닥’ 앱 서비스 개발
