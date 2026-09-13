@@ -47,7 +47,7 @@
 .experience-card {
   display: grid;
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(64px, 10vw, 160px);
+  gap: clamp(64px, 8vw, 120px);
   padding: clamp(32px, 5vw, 64px) 0;
   border-top: 1px solid rgba(0, 179, 179, 0.45);
   border-bottom: 1px solid rgba(243, 240, 249, 0.18);
@@ -72,7 +72,7 @@
 
 .experience-summary h3 span {
   color: #00b3b3;
-  margin-top: 10px;
+  margin-left: 8px;
 }
 
 .experience-period {
