@@ -20,31 +20,31 @@ body {
 }
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-family: 'Pretendard-Regular';
+  src: url('/fonts/Pretendard-Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-family: 'Pretendard-Medium';
+  src: url('/fonts/Pretendard-Medium.otf') format('opentype');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  font-family: 'Pretendard-SemiBold';
+  src: url('/fonts/Pretendard-SemiBold.otf') format('opentype');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  font-family: 'Pretendard-Bold';
+  src: url('/fonts/Pretendard-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 :root {
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Pretendard-Regular', sans-serif;
 
   background-color: #202020;
   color: #F3F0F9;
