@@ -38,17 +38,35 @@ function Skills() {
         {
             number: '01',
             title: 'Language',
-            skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Java'],
+            skills: [
+                { name: 'HTML', description: '1' },
+                { name: 'CSS', description: '2' },
+                { name: 'JavaScript', description: '3' },
+                { name: 'TypeScript', description: '4' },
+                { name: 'Java', description: '5' },
+            ],
         },
         {
             number: '02',
             title: 'Frontend',
-            skills: ['React', 'React Native', 'Vue', 'Redux', 'Axios', 'Zustand'],
+            skills: [
+                { name: 'React', description: '1' },
+                { name: 'React Native', description: '2' },
+                { name: 'Vue', description: '3' },
+                { name: 'Redux', description: '4' },
+                { name: 'Axios', description: '5' },
+                { name: 'Zustand', description: '6' },
+            ],
         },
         {
             number: '03',
             title: 'Tools',
-            skills: ['GitHub', 'Git', 'Notion', 'Figma'],
+            skills: [
+                { name: 'GitHub', description: '1' },
+                { name: 'Git', description: '2' },
+                { name: 'Notion', description: '3' },
+                { name: 'Figma', description: '4' },
+            ],
         },
     ]
     const [activeIndex, setActiveIndex] = useState(0)
@@ -86,12 +104,12 @@ function Skills() {
                     aria-labelledby={`skills-tab-${activeGroup.number}`}
                 >
                     <div className="skills-tags">
-                        {activeGroup.skills.map((skill) => {
-                            const icon = skillIcons[skill]
+                        {activeGroup.skills.map(({ name, description }) => {
+                            const icon = skillIcons[name]
                             const Icon = icon?.icon
 
                             return (
-                                <div className="skills-item" key={skill}>
+                                <div className="skills-item" key={name}>
                                     {Icon ? (
                                         <span className="skills-icon" style={{ color: icon.color }} aria-hidden="true">
                                             <Icon />
@@ -99,7 +117,10 @@ function Skills() {
                                     ) : (
                                         <span className="skills-icon skills-icon-fallback" aria-hidden="true">Z</span>
                                     )}
-                                    <span className="skills-name">{skill}</span>
+                                    <div className="skills-copy">
+                                        <span className="skills-name">{name}</span>
+                                        <span className="skills-description">{description}</span>
+                                    </div>
                                 </div>
                             )
                         })}

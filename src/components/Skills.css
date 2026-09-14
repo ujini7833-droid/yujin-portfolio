@@ -144,6 +144,19 @@
   transition: color 0.25s ease;
 }
 
+.skills-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skills-description {
+  color: rgba(243, 240, 249, 0.5);
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
 .skills-item:hover .skills-name {
   color: #00b3b3;
 }
