@@ -65,3 +65,65 @@ body {
   background-color: #202020;
   color: #F3F0F9;
 }
+
+/* Section entrance motion: the content settles in as it enters the viewport. */
+.section-reveal .about-header,
+.section-reveal .experience-header,
+.section-reveal .education-header,
+.section-reveal .skills-header,
+.section-reveal .projects-header,
+.section-reveal .connect-header,
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s cubic-bezier(.22, 1, .36, 1), transform .7s cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, transform;
+}
+
+.section-reveal.is-visible .about-header,
+.section-reveal.is-visible .experience-header,
+.section-reveal.is-visible .education-header,
+.section-reveal.is-visible .skills-header,
+.section-reveal.is-visible .projects-header,
+.section-reveal.is-visible .connect-header,
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal--delay { transition-delay: .14s; }
+
+.section-reveal.is-visible .skills-item {
+  animation: skill-item-in .45s .28s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.section-reveal.is-visible .skills-item:nth-child(2) { animation-delay: .33s; }
+.section-reveal.is-visible .skills-item:nth-child(3) { animation-delay: .38s; }
+.section-reveal.is-visible .skills-item:nth-child(4) { animation-delay: .43s; }
+.section-reveal.is-visible .skills-item:nth-child(5) { animation-delay: .48s; }
+.section-reveal.is-visible .skills-item:nth-child(6) { animation-delay: .53s; }
+
+@keyframes skill-item-in {
+  from { opacity: 0; transform: translateX(-14px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .section-reveal .about-header,
+  .section-reveal .experience-header,
+  .section-reveal .education-header,
+  .section-reveal .skills-header,
+  .section-reveal .projects-header,
+  .section-reveal .connect-header,
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

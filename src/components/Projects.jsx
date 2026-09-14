@@ -30,7 +30,7 @@ function Projects() {
     }, [])
 
     return (
-        <section id="projects" className="projects" ref={projectsRef}>
+        <section id="projects" className="projects section-reveal" ref={projectsRef}>
             <div className="projects-header"><p>05</p><h2>Projects<span>.</span></h2></div>
             <div className="projects-list">{projects.map((project, index) => <ProjectCard key={project.name} project={project} index={index} />)}</div>
         </section>

@@ -2,7 +2,7 @@ import './About.css';
 
 function About() {
     return (
-        <section id='about' className='about'>
+        <section id='about' className='about section-reveal'>
             <div className='about-inner'>
 
                 <div className='about-header'>
@@ -17,7 +17,7 @@ function About() {
 
                 <div className='about-content'>
 
-                    <div className='about-title'>
+                    <div className='about-title scroll-reveal'>
                         <p>
                             사용자와 동료를
                             <br />
@@ -25,7 +25,7 @@ function About() {
                         </p>
                     </div>
 
-                    <div className='about-description'>
+                    <div className='about-description scroll-reveal scroll-reveal--delay'>
                         <p>
                             현재 성공회대학교 소프트웨어융합학부 3학년으로 재학 중이며,
                             주로 React와 React Native를 활용한 웹·모바일 개발을 진행하고 있습니다.
