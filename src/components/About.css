@@ -51,6 +51,11 @@
   color: #00b3b3;
 }
 
+.about-header h2 em {
+  color: #00b3b3;
+  font-style: normal;
+}
+
 
 /* =========================
    CONTENT

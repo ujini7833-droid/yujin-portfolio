@@ -10,7 +10,9 @@ function About() {
 
                     <h2>About
                         <span> Me</span>
+                        <em>.</em>
                     </h2>
+                    
                 </div>
 
                 <div className='about-content'>
