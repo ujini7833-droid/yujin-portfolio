@@ -2,16 +2,16 @@ import './Connect.css'
 
 const Connect = () => {
     return (
-        <section id="connect" className="connect section-reveal">
+        <section id="connect" className="connect">
             <div className="connect-inner">
 
                 <div className="connect-content">
-                    <p className="connect-message scroll-reveal">
+                    <p className="connect-message">
                         더 궁금하신 점이 있으면<br />
                         <span>편하게 연락해 주세요!</span>
                     </p>
 
-                    <div className="connect-links scroll-reveal scroll-reveal--delay">
+                    <div className="connect-links">
                         <a href="mailto:ujini7833@gmail.com">
                             <span className="connect-link-label">EMAIL</span>
                             <span className="connect-link-value">ujini7833@gmail.com</span>
@@ -25,7 +25,7 @@ const Connect = () => {
                     </div>
                 </div>
 
-                <footer className="connect-footer scroll-reveal scroll-reveal--delay">© 2026 YUJIN BAE</footer>
+                <footer className="connect-footer">© 2026 YUJIN BAE</footer>
             </div>
         </section>
     )
