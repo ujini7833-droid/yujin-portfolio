@@ -35,7 +35,10 @@
   letter-spacing: -0.05em;
 }
 
-.experience-header h2 span,
+.experience-header h2 span {
+  color: #00b3b3;
+}
+
 .experience-group h4 {
   color: #eeebf1;
 }

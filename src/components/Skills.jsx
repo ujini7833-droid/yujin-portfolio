@@ -1,4 +1,5 @@
 import './Skills.css'
+import { useState } from 'react'
 
 function Skills() {
     const skillGroups = [
@@ -18,6 +19,8 @@ function Skills() {
             skills: ['GitHub', 'Git', 'Notion', 'Figma'],
         },
     ]
+    const [activeIndex, setActiveIndex] = useState(0)
+    const activeGroup = skillGroups[activeIndex]
 
     return (
         <section id="skills" className="skills">
@@ -27,22 +30,36 @@ function Skills() {
                     <h2>Skills<span>.</span></h2>
                 </header>
 
-                <div className="skills-list">
-                    {skillGroups.map((group) => (
-                        <article className="skills-group" key={group.title}>
-                            <div className="skills-group-heading">
-                                <span>{group.number}</span>
-                                <h3>{group.title}</h3>
-                            </div>
-
-                            <div className="skills-tags">
-                                {group.skills.map((skill) => (
-                                    <span key={skill}>{skill}</span>
-                                ))}
-                            </div>
-                        </article>
+                <div className="skills-tabs" role="tablist" aria-label="기술 분류">
+                    {skillGroups.map((group, index) => (
+                        <button
+                            className={activeIndex === index ? 'active' : ''}
+                            id={`skills-tab-${group.number}`}
+                            key={group.title}
+                            role="tab"
+                            aria-controls={`skills-panel-${group.number}`}
+                            aria-selected={activeIndex === index}
+                            onClick={() => setActiveIndex(index)}
+                        >
+                            <span>{group.number}</span>
+                            {group.title}
+                        </button>
                     ))}
                 </div>
+
+                <section
+                    className="skills-panel"
+                    id={`skills-panel-${activeGroup.number}`}
+                    role="tabpanel"
+                    aria-labelledby={`skills-tab-${activeGroup.number}`}
+                >
+                    <h3>{activeGroup.title}</h3>
+                    <div className="skills-tags">
+                        {activeGroup.skills.map((skill) => (
+                            <span key={skill}>{skill}</span>
+                        ))}
+                    </div>
+                </section>
             </div>
         </section>
     )
