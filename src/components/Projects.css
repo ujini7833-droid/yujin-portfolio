@@ -1,0 +1,23 @@
+.projects { width: 100%; padding: 120px 4.25% 0; overflow: hidden; background: #202020; color: #eeebf1; }
+.projects-header { display: flex; align-items: baseline; gap: 20px; width: min(1400px, 100%); margin: 0 auto 68px; }
+.projects-header p { margin: 0; color: #00b3b3; font-family: 'Pretendard-Medium', sans-serif; font-size: 16px; letter-spacing: .1em; }
+.projects-header h2 { margin: 0; font-family: 'Pretendard-Medium', sans-serif; font-size: clamp(20px, 4vw, 24px); font-weight: 400; letter-spacing: -.05em; }
+.projects-header h2 span { color: #00b3b3; }
+.projects-list { border-top: 1px solid rgba(0, 179, 179, .45); }
+.project-card { display: flex; min-height: 88vh; border-bottom: 1px solid rgba(243, 240, 249, .18); overflow: hidden; }
+.project-card-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, .9fr); gap: clamp(64px, 11vw, 180px); align-items: center; width: min(1400px, 100%); margin: 0 auto; padding: clamp(68px, 9vh, 110px) 0; }
+.project-visual { position: relative; }
+.project-index, .project-type, .project-detail dt { color: #00b3b3; font-family: 'Pretendard-Medium', sans-serif; font-size: 13px; letter-spacing: .1em; }
+.project-index { display: block; margin-bottom: 50px; }.project-type { margin: 0 0 14px; }
+.project-visual h3 { margin: 0; font-family: 'Pretendard-SemiBold', sans-serif; font-size: clamp(42px, 5.4vw, 80px); font-weight: 400; letter-spacing: -.065em; line-height: 1; }
+.project-tagline { margin: 18px 0 34px; color: rgba(243, 240, 249, .62); font-size: 16px; }
+.project-image-frame { display: flex; align-items: center; justify-content: center; height: clamp(280px, 32vw, 430px); border: 1px solid rgba(0, 179, 179, .25); background: #292929; overflow: hidden; }
+.project-image-frame img { display: block; max-width: 82%; max-height: 86%; object-fit: contain; box-shadow: 0 18px 36px rgba(0, 0, 0, .22); }
+.project-image-frame.travodo img { height: 86%; }.project-image-frame.lastcup img { max-height: 112%; max-width: 60%; box-shadow: none; }.project-image-frame.todaktodak img { width: 100%; max-width: none; max-height: none; box-shadow: none; }
+.project-details { max-width: 500px; }.project-details dl { margin: 0; }
+.project-detail { display: grid; grid-template-columns: 142px minmax(0, 1fr); gap: 20px; padding: 20px 0; border-top: 1px solid rgba(243, 240, 249, .16); }.project-detail:last-child { border-bottom: 1px solid rgba(243, 240, 249, .16); }.project-detail dt, .project-detail dd { margin: 0; }
+.project-detail dd { color: rgba(243, 240, 249, .72); font-size: 15px; line-height: 1.65; }.project-skills { display: flex; flex-wrap: wrap; gap: 7px; }.project-skills span { padding: 5px 9px; border: 1px solid rgba(0, 179, 179, .35); border-radius: 999px; color: #00b3b3; font-family: 'Pretendard-Medium', sans-serif; font-size: 12px; line-height: 1.2; }
+.project-github { display: inline-flex; align-items: center; gap: 9px; margin-top: 38px; color: #eeebf1; font-family: 'Pretendard-Medium', sans-serif; font-size: 15px; text-decoration: none; transition: color .25s ease, transform .25s ease; }.project-github span { color: #00b3b3; font-size: 20px; transition: transform .25s ease; }.project-github:hover { color: #00b3b3; transform: translateX(5px); }.project-github:hover span { transform: translate(3px, -3px); }
+.project-reveal { opacity: 0; transition: opacity .8s ease, transform .8s cubic-bezier(.22, 1, .36, 1); }.project-reveal-left { transform: translateX(-100px); }.project-reveal-right { transform: translateX(100px); transition-delay: .12s; }.project-card.is-visible .project-reveal { opacity: 1; transform: translateX(0); }
+@media (max-width: 768px) { .projects { padding: 100px 7% 0; }.projects-header { margin-bottom: 70px; }.project-card { min-height: auto; }.project-card-inner { grid-template-columns: 1fr; gap: 48px; padding: 72px 0; }.project-index { margin-bottom: 32px; }.project-image-frame { height: min(92vw, 410px); }.project-details { max-width: none; }.project-detail { grid-template-columns: 1fr; gap: 9px; padding: 18px 0; }.project-reveal-left { transform: translateX(-48px); }.project-reveal-right { transform: translateX(48px); } }
+@media (prefers-reduced-motion: reduce) { .project-reveal { opacity: 1; transform: none; transition: none; } }
