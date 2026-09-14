@@ -21,7 +21,7 @@ function ProjectCard({ project, index }) {
                         <div className="project-detail"><dt>Outcome / Learning</dt><dd>{project.learning}</dd></div>
                     </dl>
                     <a className="project-github" href={project.github} target="_blank" rel="noopener noreferrer">
-                        GitHub 바로가기 <span aria-hidden="true">↗</span>
+                        GitHub<span aria-hidden="true">↗</span>
                     </a>
                 </div>
             </div>
