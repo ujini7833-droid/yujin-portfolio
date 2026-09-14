@@ -30,6 +30,8 @@ function Education() {
                                     React Native를 활용한 ‘토닥토닥’ 앱 서비스 개발
                                 </p>
                                 <span className="education-tag">React Native</span>
+                                <span className='education-tag'>TypeScript</span>
+                                <span className='education-tag'>JavaScript</span>
                             </section>
                         </div>
                     </article>
