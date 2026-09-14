@@ -14,6 +14,7 @@ import {
     SiRedux,
     SiTypescript,
     SiVuedotjs,
+    SiVercel,
 } from 'react-icons/si'
 
 const skillIcons = {
@@ -31,6 +32,7 @@ const skillIcons = {
     Git: { icon: SiGit, color: '#f05032' },
     Notion: { icon: SiNotion, color: '#eeebf1' },
     Figma: { icon: SiFigma, color: '#f24e1e' },
+    Vercel: { icon: SiVercel, color: '#eeebf1' },
 }
 
 function Skills() {
@@ -39,33 +41,34 @@ function Skills() {
             number: '01',
             title: 'Language',
             skills: [
-                { name: 'HTML', description: '1' },
-                { name: 'CSS', description: '2' },
-                { name: 'JavaScript', description: '3' },
-                { name: 'TypeScript', description: '4' },
-                { name: 'Java', description: '5' },
+                { name: 'HTML', description: '기본적인 태그를 알고 사용할 수 있습니다.' },
+                { name: 'CSS', description: '기본적인 CSS를 알고 사용할 수 있습니다.' },
+                { name: 'JavaScript', description: 'ES6+ 문법을 알고 비동기 처리에 활용할 수 있습니다.' },
+                { name: 'TypeScript', description: 'React Native 개발 시에 사용해본 적이 있습니다.' },
+                { name: 'Java', description: '2학년 때 학교에서 처음 배운 언어이며 얼마 전 다시 공부하여 기본적인 문법을 알고 있습니다.' },
             ],
         },
         {
             number: '02',
             title: 'Frontend',
             skills: [
-                { name: 'React', description: '1' },
-                { name: 'React Native', description: '2' },
-                { name: 'Vue', description: '3' },
-                { name: 'Redux', description: '4' },
-                { name: 'Axios', description: '5' },
-                { name: 'Zustand', description: '6' },
+                { name: 'React', description: '협업 시에는 아직 사용한 적이 없으나 얼마 전 독학하며 개인 프로젝트를 한 적이 있습니다.' },
+                { name: 'React Native', description: '가장 많은 프로젝트에 사용해봤으며, 컴포넌트 설계 및 상태 관리가 가능합니다.' },
+                { name: 'Vue', description: '올해 1학기에 학교에서 배운 적이 있으며, 간단한 개인 프로젝트를 해본 적이 있습니다.' },
+                { name: 'Redux', description: '프로젝트에 사용해본 적은 없지만 간단한 강의를 통해 학습한 적이 있습니다.' },
+                { name: 'Axios', description: '프로젝트 시 REST API 연동에 사용한 적이 있습니다.' },
+                { name: 'Zustand', description: '프로젝트 시 전역 상태 관리에 사용한 적이 있습니다.' },
             ],
         },
         {
             number: '03',
             title: 'Tools',
             skills: [
-                { name: 'GitHub', description: '1' },
-                { name: 'Git', description: '2' },
-                { name: 'Notion', description: '3' },
-                { name: 'Figma', description: '4' },
+                { name: 'GitHub', description: '브랜치 기반의 개발을 위해 사용한 적이 있습니다.' },
+                { name: 'Git', description: '협업 또는 개인 프로젝트 시 사용하였습니다.' },
+                { name: 'Notion', description: '프로젝트 시 문서화 및 협업을 위해 사용하였습니다.' },
+                { name: 'Figma', description: '컴포넌트 및 스크린 설계를 위해 기본적인 기능을 사용할 수 있습니다.' },
+                { name: 'Vercel', description: 'React 웹 서비스를 배포해본 경험이 있습니다.' },
             ],
         },
     ]
