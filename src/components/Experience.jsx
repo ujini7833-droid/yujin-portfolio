@@ -11,7 +11,7 @@ function Experience() {
     const skills = ['React Native', 'JavaScript', 'TypeScript']
 
     return (
-        <section id="experience" className="experience">
+        <section id="experience" className="experience section-reveal">
             <div className="experience-inner">
                 <header className="experience-header">
                     <p className="experience-number">02</p>
@@ -19,13 +19,13 @@ function Experience() {
                 </header>
 
                 <article className="experience-card">
-                    <div className="experience-summary">
+                    <div className="experience-summary scroll-reveal">
                         <h3>GDGOC SKHU <span>4기</span></h3>
                         <p className="experience-role">모바일 파트</p>
                         <p className="experience-period">2025.09 — 2026.06</p>
                     </div>
 
-                    <div className="experience-details">
+                    <div className="experience-details scroll-reveal scroll-reveal--delay">
                         <section className="experience-group">
                             <h4>주요 성과</h4>
                             <ul>

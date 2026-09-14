@@ -76,14 +76,14 @@ function Skills() {
     const activeGroup = skillGroups[activeIndex]
 
     return (
-        <section id="skills" className="skills">
+        <section id="skills" className="skills section-reveal">
             <div className="skills-inner">
                 <header className="skills-header">
                     <p className="skills-number">04</p>
                     <h2>Skills<span>.</span></h2>
                 </header>
 
-                <div className="skills-tabs" role="tablist" aria-label="기술 분류">
+                <div className="skills-tabs scroll-reveal" role="tablist" aria-label="기술 분류">
                     {skillGroups.map((group, index) => (
                         <button
                             className={activeIndex === index ? 'active' : ''}
@@ -101,7 +101,7 @@ function Skills() {
                 </div>
 
                 <section
-                    className="skills-panel"
+                    className="skills-panel scroll-reveal scroll-reveal--delay"
                     id={`skills-panel-${activeGroup.number}`}
                     role="tabpanel"
                     aria-labelledby={`skills-tab-${activeGroup.number}`}

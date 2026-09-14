@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 import Header from './components/Header'
@@ -14,6 +14,21 @@ import Connect from './components/Connect'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('.section-reveal, .scroll-reveal')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.14, rootMargin: '0px 0px -8%' })
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>

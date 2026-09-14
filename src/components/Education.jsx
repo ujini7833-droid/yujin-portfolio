@@ -2,7 +2,7 @@ import './Education.css'
 
 function Education() {
     return (
-        <section id="education" className="education">
+        <section id="education" className="education section-reveal">
             <div className="education-inner">
                 <header className="education-header">
                     <p className="education-number">03</p>
@@ -11,12 +11,12 @@ function Education() {
 
                 <div className="education-list">
                     <article className="education-entry">
-                        <div className="education-meta">
+                        <div className="education-meta scroll-reveal">
                             <p>ACADEMIC</p>
                             <span>01</span>
                         </div>
 
-                        <div className="education-content">
+                        <div className="education-content scroll-reveal scroll-reveal--delay">
                             <h3>성공회대학교 <span>소프트웨어융합학부</span></h3>
                             <div className="education-info">
                                 <p>재학</p>
