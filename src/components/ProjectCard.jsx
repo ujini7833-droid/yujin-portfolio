@@ -9,6 +9,7 @@ function ProjectCard({ project, index }) {
                     <p className="project-tagline">{project.tagline}</p>
                     <div className={`project-image-frame ${project.imageClass}`}>
                         <img src={project.image} alt={`${project.name} 메인 화면`} />
+                        <span className="project-image-title">{project.name}</span>
                     </div>
                 </div>
 
