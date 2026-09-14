@@ -7,7 +7,6 @@ function QuickMenu({ isOpen, onClose }) {
         { number: '03', name: 'Education', id: 'education' },
         { number: '04', name: 'Skills', id: 'skills' },
         { number: '05', name: 'Projects', id: 'projects' },
-        { number: '06', name: 'Connect', id: 'connect' },
     ]
 
     const handleClick = (id) => {
