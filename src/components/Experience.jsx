@@ -2,10 +2,10 @@ import './Experience.css'
 
 function Experience() {
     const achievements = [
-        '그로우톤 대상',
         'React Native를 활용한 앱 UI 구현',
-        '대학 연합 프로젝트 tripleS 2위',
         '크로스플랫폼 프로그래밍 교육과정 이수',
+        '그로우톤 대상',
+        '대학 연합 프로젝트 tripleS 2위',
     ]
 
     const skills = ['React Native', 'JavaScript', 'TypeScript']
