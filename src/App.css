@@ -127,3 +127,134 @@ body {
     transform: none;
   }
 }
+
+/* Keep the screen design intact and format browser print output for A4. */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+    background: #202020 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  header,
+  .quick-menu,
+  .intro-scroll {
+    display: none !important;
+  }
+
+  .intro,
+  .about,
+  .experience,
+  .education,
+  .skills,
+  .projects,
+  .connect {
+    width: 210mm;
+    min-height: 0;
+    margin: 0;
+    overflow: visible;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .intro-inner,
+  .about,
+  .experience,
+  .education,
+  .skills,
+  .projects,
+  .connect {
+    padding: 18mm 16mm;
+  }
+
+  .intro-inner {
+    min-height: 0;
+  }
+
+  .intro-text,
+  .intro-visual,
+  .section-reveal .about-header,
+  .section-reveal .experience-header,
+  .section-reveal .education-header,
+  .section-reveal .skills-header,
+  .section-reveal .projects-header,
+  .section-reveal .connect-header,
+  .scroll-reveal,
+  .project-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    will-change: auto;
+  }
+
+  .about-header,
+  .experience-header,
+  .education-header,
+  .skills-header {
+    margin-bottom: 22mm;
+  }
+
+  .project-card {
+    min-height: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .project-card:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .project-card-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+    gap: 12mm;
+    width: 100%;
+    padding: 14mm 0;
+  }
+
+  .project-image-frame {
+    height: 72mm;
+  }
+
+  .project-details {
+    max-width: none;
+  }
+
+  .project-detail {
+    grid-template-columns: 32mm minmax(0, 1fr);
+    gap: 4mm;
+  }
+
+  .project-github {
+    font-size: 10pt;
+  }
+
+  .skills-tabs button {
+    color: #eeebf1;
+  }
+
+  .connect-content {
+    padding-bottom: 18mm;
+  }
+}
