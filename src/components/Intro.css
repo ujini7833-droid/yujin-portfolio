@@ -83,7 +83,10 @@
     font-family: 'Pretendard-Medium';
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
+    overflow-wrap: anywhere;
 }
+
+.intro-links a { max-width: 100%; }
 
 .intro-link-icon {
     width: 16px;

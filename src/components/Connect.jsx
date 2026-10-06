@@ -19,7 +19,7 @@ const Connect = () => {
                         </a>
                         <a href="https://github.com/ujini7833-droid" target="_blank" rel="noopener noreferrer">
                             <span className="connect-link-label">GITHUB</span>
-                            <span className="connect-link-value">@ujini7833-droid</span>
+                            <span className="connect-link-value">https://github.com/ujini7833-droid</span>
                             <span className="connect-arrow" aria-hidden="true">↗</span>
                         </a>
                     </div>
