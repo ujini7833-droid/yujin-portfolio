@@ -80,7 +80,7 @@
   letter-spacing: .1em;
 }
 
-.connect-link-value { min-width: 0; font-size: 15px; overflow-wrap: anywhere; word-break: break-word; }
+.connect-link-value { font-size: 15px; }
 
 .connect-arrow {
   font-size: 21px;
